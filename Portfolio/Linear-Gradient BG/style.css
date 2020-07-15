@@ -1,0 +1,49 @@
+body {
+    height: 100vh;
+    font-family: 'Comfortaa', cursive;
+    color: #00000088;
+    background: linear-gradient(to right,#32a2b6, #96f567);
+}
+
+
+section {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    letter-spacing: .4em;
+}
+h2 {
+    font-size: 2rem;
+    letter-spacing: .2em;
+}
+
+h1, h2 {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.3em;
+    
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+select{
+    height: 2.05em;
+    width: 5em;
+}
+
+#lg-display {
+    font-size: 1.5rem;
+}
+
+

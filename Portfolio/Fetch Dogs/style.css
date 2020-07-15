@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-container {
+    justify-content: center;
+    height: calc(100vh - 68.813px - 2rem);
+}
+
+img {
+    max-height: 80%;
+}
+
+nav {
+    background-color: rgb(70, 95, 172);
+    color: rgb(255, 255, 255);
+}
+
+nav select {
+    width: 10rem;
+    padding: .2rem;
+}
+
+.bone {
+    font-size: 60px;
+    animation: rotate 1300ms linear infinite;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+@keyframes rotate {
+    to {
+        transform: rotateZ(360deg);
+    }
+}
