@@ -1,4 +1,3 @@
- 
  //Smooth Scrolling
  $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -17,9 +16,10 @@
             relativeTime = ((baseMaxScrollTime - baseMinScrollTime) * scrollProportion) + baseMinScrollTime,
             // Create inverse relationship (quicker the further we scroll)
             scrollTime = -1 * (1 - relativeTime);
-
+        
+       //Scroll stop now accounts margin and padding of sticky nav
         $('html, body').animate({
-          scrollTop: targetTop - 67
+          scrollTop: targetTop - $('nav').outerHeight()
         }, scrollTime);
         return false;
       }
