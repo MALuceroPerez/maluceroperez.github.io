@@ -1,3 +1,4 @@
+
  //Smooth Scrolling
  $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -17,7 +18,6 @@
             // Create inverse relationship (quicker the further we scroll)
             scrollTime = -1 * (1 - relativeTime);
         
-       //Scroll stop now accounts margin and padding of sticky nav
         $('html, body').animate({
           scrollTop: targetTop - $('nav').outerHeight()
         }, scrollTime);
@@ -25,3 +25,35 @@
       }
     }
   });
+
+
+let ctx = document.getElementById('skills').getContext('2d');
+Chart.defaults.global.defaultFontColor = 'white';
+let chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'horizontalBar',
+    
+
+    // The data for our dataset
+    data: {
+      labels: ['HTML5', 'CSS3', 'JavaScript', 'React', 'Express', 'PHP', 'SQL'],
+      datasets: [{
+          label: 'Skills',
+          backgroundColor: '#dc3545',
+          borderColor: '#dc3545',
+          data: [9, 8, 9, 8, 7, 7, 6], 
+      }]
+  },
+
+    // Configuration options go here
+    options: {
+      scales: {
+        xAxes: [{
+            ticks: {
+                beginAtZero: true,
+                suggestedMax: 10,
+            }
+        }]
+    }
+    }
+});
