@@ -1,0 +1,316 @@
+:root {
+    /* Primary */
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+
+    /* Neutral */
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--White);
+    background: url(./images/bg-pattern-top-mobile.svg) no-repeat;
+
+    font-family: 'League Spartan', sans-serif;
+}
+
+p {
+    font-size: 15px;
+}
+
+/*====================
+    Site Wrapper
+======================*/
+.site-wrapper {
+    padding: 81px 23px;
+}
+
+/*====================
+    Lead Component
+======================*/
+
+
+.lead-title {
+    margin: 0;
+    font-size: 2.5rem;
+    line-height: 33px;
+    letter-spacing: -1.4px;
+    text-align: center;
+    color: var(--Very-Dark-Magenta);
+
+}
+
+.lead-text {
+    margin: 23px 0;
+    color: var(--Dark-Grayish-Magenta);
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+/*====================
+    Review Component
+======================*/
+
+.reviews {
+    margin: 36px 0;
+}
+
+.stars {
+    margin: 0 0 12px 0;
+}
+
+.star {
+    margin: 0;
+}
+
+.review {
+
+    margin: 16px 0 16px 0;
+    padding: 16px 0 16px 0;
+    border-radius: .5rem;
+    background-color: var(--Light-Grayish-Magenta);
+
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--Very-Dark-Magenta);
+    text-align: center;
+    
+}
+
+.review-text {
+    margin: 0;
+}
+
+
+
+/*====================
+    Card Component
+======================*/
+.testimonials {
+    margin-top: 48px;
+}
+.card {
+
+    padding: 16px 33px;
+    margin: 0px 0 16px 0;
+    border-radius: 8px;
+    background-color: var(--Dark-Grayish-Magenta);
+    color: var(--White);
+}
+
+.card-header {
+    margin: 20px 0 26px 0;
+    display: flex;
+    align-items: center;
+}
+
+.card-author-image {
+    width: 45px;
+    border-radius: 50px;
+}
+
+.card-author {
+    margin: 0  16px 0 16px;
+}
+.card-author-name {    
+    margin: 0;
+}
+.card-author-status {
+    margin: 0;
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--Soft-Pink);
+}
+
+.card-testimony {
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 18px;
+    line-height: 22px;
+}
+
+
+/* =======================
+
+        Media Queries
+
+===========================*/
+
+
+@media (min-width: 600px) {
+
+    .site-wrapper {
+        padding: 124px 52px 124px 52px;
+    }
+
+
+    .lead {
+        margin: 0 auto;
+        width: 415px;
+    }
+    .lead-title {
+        font-size: 56px;
+        line-height: 44px;
+    }
+
+    .reviews {
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 540px;
+    }
+    .review {
+        margin-bottom: 4px;
+        width: 450px;
+        text-align: unset;
+    }
+
+    .stars {
+        margin: 0 42px 0 34px;
+        display: inline-block;
+    }
+    .review-text {
+        font-size: 18px;
+        display: inline-block;
+    }
+
+    .testimonials {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        margin-right: auto;
+        margin-left: auto;
+        padding: 38px 33px;
+        width: 287px;
+        max-height: 237px;
+    }
+    
+}
+
+@media(min-width: 850px) {
+    .testimonials{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 746px;
+    }
+}
+
+/* @media (min-width: 1059px) {
+    .lead-reviews-wrapper {
+        width: 100%;
+        display: flex;
+    }
+} */
+
+@media (min-width: 1400px) {
+
+
+    .site-wrapper {
+        padding: 124px 124px 124px 163px;
+    }
+
+    .lead-reviews-wrapper {
+        width: 100%;
+        display: flex;
+    }
+
+    .lead {
+        margin-right: 156px;
+        width: 415px;
+    }
+    .lead-title {
+        font-size: 56px;
+        text-align: left;
+        line-height: 44px;
+    }
+
+    .lead-text {
+        margin: 33px 0 0 0;
+        text-align: left;
+    }
+
+
+    .reviews {
+        display: flex;
+        flex-direction: column;
+        margin-top: 7px;
+        width: 540px;
+    }
+    .review {
+        margin-bottom: 4px;
+        width: 450px;
+        text-align: unset;
+    }
+    .review:nth-child(1){
+        align-self: flex-start;
+    }
+    .review:nth-child(2){
+        align-self: center;
+    }
+    .review:nth-child(3){
+        align-self: flex-end;
+    }
+
+    .stars {
+        margin: 0 42px 0 34px;
+        display: inline-block;
+    }
+    .review-text {
+        font-size: 18px;
+        display: inline-block;
+    }
+
+    .testimonials {
+        display: flex;
+        height: 273px;
+        max-width: 1113px;
+    }
+
+    .card {
+        margin-bottom: 0;
+        padding: 38px 33px;
+        width: 287px;
+        max-height: 237px;
+        margin-right: 27px;
+    }
+
+    .card-header {
+       margin: 0 0 26px 0;
+    }
+
+    .card:nth-child(1){
+        align-self: flex-start;
+    }
+
+    .card:nth-child(2){
+        align-self: center;
+    }
+
+    .card:nth-child(3) {
+        align-self: flex-end;
+        margin-right: 0;
+    }
+
+
+    .card:last-child {
+        margin-right: 0px;
+    }
+
+    .card-testimony {
+        margin-bottom: 0;
+        font-size: 16px;
+    }
+    
+}
