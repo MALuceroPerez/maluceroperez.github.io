@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+  <script defer src="javascript.js"></script>
+
+</head>
+<body>
+  <div class="site-wrapper">
+    <form action="" class="review-form">
+      <header class="review-form-header">
+        <div class="review-form-Icon-wrapper">
+          <div class="review-form-icon-background">
+          </div>
+          <img class="review-form-icon" src="./images/icon-star.svg" alt="Star Icon">
+        </div>
+        <h2 class="review-form-title">
+          How did we do?
+        </h2>
+        <p class="review-form-request">
+          Please let us know how we did with your support request. All feedback is appreciated 
+          to help us improve our offering!
+        </p>
+      </header>
+
+      <section class="review-form-ratings">
+        <div class="review-form-rating">
+          <input id="option1" class="review-form-rating-radio"type="radio" name="rating" value="1">
+          <label class="review-form-rating-label" for="option1">1</label>
+        </div>
+        
+        <div class="review-form-rating">
+          <input id="option2" class="review-form-rating-radio"type="radio" name="rating" value="2">
+          <label class="review-form-rating-label" for="option2">2</label>
+        </div>
+
+        <div class="review-form-rating">
+          <input id="option3" class="review-form-rating-radio"type="radio" name="rating" value="3">
+          <label class="review-form-rating-label" for="option3">3</label>
+        </div>
+
+        <div class="review-form-rating">
+          <input id="option4" class="review-form-rating-radio"type="radio" name="rating" value="4">
+          <label class="review-form-rating-label" for="option4">4</label>
+        </div>
+
+        <div class="review-form-rating">
+          <input id="option5" class="review-form-rating-radio"type="radio" name="rating" value="5">
+          <label class="review-form-rating-label" for="option5">5</label>
+        </div>
+      </section>
+
+
+      <input class="review-form-submit" type="submit" value="Submit">
+    </form>
+
+    <article class="thank-you-card">
+
+      <img class="thank-you-card-image" src="./images/illustration-thank-you.svg" alt="A review being sent from a phone">
+
+      <p class="thank-you-card-statistic">
+        You selected <span id="rating"></span> out of 5
+      </p>
+
+      <h2 class="thank-you-card-title">
+        Thank you!
+      </h2>
+
+      <p class="thank-you-card-message ">
+        We appreciate you taking the time to give a rating. If you ever need more support, 
+        don’t hesitate to get in touch!
+      </p>
+
+    </article>
+
+  </div>
+
+  
+  <div class="attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+      >Frontend Mentor</a
+    >. Coded by <a href="https://www.linkedin.com/in/manuel-lucero-4a614b165/">Manuel Lucero Perez</a>.
+  </div>
+</body>
+</html>

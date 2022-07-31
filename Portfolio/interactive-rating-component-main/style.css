@@ -1,0 +1,266 @@
+:root {
+--Orange: hsl(25, 97%, 53%);
+--White: hsl(0, 0%, 100%);
+--Light-Grey: hsl(217, 12%, 63%);
+--Medium-Grey: hsl(216, 12%, 54%);
+--Darkish-Blue: rgb(38,47,56);
+--Dark-Blue: hsl(213, 19%, 18%);
+--Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Overpass', sans-serif;
+}
+
+p {
+    font-size: 15px;
+}
+
+.site-wrapper {
+    height: 100vh;
+    padding: 40% 22px 0 22px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--Very-Dark-Blue);
+}
+
+.review-form,.thank-you-card {
+    margin: 0 auto;
+    padding: 27px;
+    display: flex;
+    flex-direction: column;
+    max-width: 410px;
+    
+    background-color: var(--Dark-Blue);
+    border-radius: 15px;
+    color: var(--Light-Grey);
+}
+
+
+.review-form-header {
+    position: relative;
+}
+
+.review-form-icon-background {
+    display: flex;
+
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: var(--Light-Grey);
+    opacity: .2;
+    margin-bottom: 21px;
+}
+.review-form-icon {
+    position: absolute;
+    top: 11.5px;
+    left: 11.5px;
+}
+.review-form-title {
+    margin: 0 0;
+    font-size: 23px;
+    color: white;
+}
+
+.review-form-request {
+    margin: 9px 0;
+    font-size: 14px;
+    line-height: 1.5rem;
+}
+
+.review-form-ratings {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0;
+}
+
+.review-form-rating {
+    position: relative;
+}
+
+.review-form-rating-label {
+    position: absolute;
+    right: 16px;
+    top: 11px;
+}
+
+
+
+.review-form-rating-radio {
+  /* Reset Radio Appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* For iOS < 15 */
+  margin: 0;
+  font: inherit;
+  color: var(--Light-Grey);
+  background-color: var(--Light-Grey);
+  border: 1px solid var(--Light-Grey);
+  opacity: .2;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: all ease .1s;
+}
+
+.review-form-rating-radio:hover {
+    background-color: var(--Orange);
+    border-color: var(--Very-Dark-Blue);
+    opacity: 1;
+}
+.review-form-rating-radio:hover + .review-form-rating-label {
+    color: var(--White);
+}
+
+.review-form-rating-radio:checked  {
+    background-color: var(--Medium-Grey);
+    border-color: var(--Medium-Grey);
+    opacity: 1;
+}
+
+.review-form-rating-radio:checked + .review-form-rating-label {
+    color: var(--White);
+}
+
+.review-form-submit {
+    display: block;
+    margin: 0;
+    padding: 14px 52px;
+    border: 1px solid var(--Very-Dark-Blue);
+    background-color: var(--Orange);
+    border-radius: 26px;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--White);
+}
+
+.review-form-submit:hover {
+    background-color: var(--White);
+    color: var(--Orange);
+}
+
+.thank-you-card {
+    display: none;
+    margin: 0 auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+}
+
+.thank-you-card-image {
+    width: 145px;
+    margin: 10px 0 4px 0;
+}
+
+.thank-you-card-statistic {
+    padding: 7px 0;
+    margin-right: 82px;
+    margin-left: 82px;
+    margin-bottom: 25px;
+    border-radius: 20px;
+    color: var(--Orange);
+    background-color: rgba(149, 158, 172, .2);
+}
+.thank-you-card-title {
+    margin-bottom: 15px;
+    color: var(--White);
+}
+
+.thank-you-card-message {
+    margin-bottom: 17px;
+    color: var(--White);
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.temp {
+    position: absolute;
+    opacity: .5;
+    z-index: 1;
+}
+
+@media (min-width: 455px) {
+
+    .site-wrapper {
+        padding: 14% 22px;
+    }
+    .review-form{
+        padding: 45px 27px;
+        border-radius: 32px;
+    }
+
+    .review-form-icon-background {
+        width: 45px;
+        height: 45px;
+    }
+
+    .review-form-icon {
+        top: 14px;
+        left: 14px;
+    }
+
+    .review-form-title {
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+
+    .review-form-request {
+        font-size: 15px;
+    }
+
+    .review-form-rating-label {
+        top: 15px;
+        left: 18px;
+    }
+    [for="option1"] {
+        left: 19px;
+    }
+
+    [for="option4"] {
+        left: 17px;
+    }
+
+    .review-form-rating-radio {
+        width: 45px;
+        height: 45px;
+    }
+
+    .thank-you-card {
+        padding: 37px;
+        border-radius: 32px;
+    }
+    
+
+    .thank-you-card-image {
+        width: 160px; 
+        margin-bottom: 18px;
+    }
+
+    .thank-you-card-statistic {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+
+    .thank-you-card-title {
+        font-size: 28px;
+        margin-bottom: 8px;
+    }
+    .thank-you-card-message {
+        margin: 0 0 10px 0;
+        font-size: 15px;
+        line-height: 1.6rem;
+        line-height: 24px;
+    }
+}
