@@ -152,7 +152,7 @@ body p {
     color: hsl(228, 45%, 44%);
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1440px) {
 
     .site-wrapper {
         padding-top: 102px;
