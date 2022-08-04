@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script defer src="javascript.js"></script>
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+</head>
+<body>
+
+  <main class="site-wrap">
+
+    <header class="lead">
+  
+      <h1 class="lead-title">
+        Learn to code by watching others
+      </h1>
+  
+      <p class="lead-message">
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable.
+      </p>
+  
+    </header>
+    
+    <article class="signup">
+
+        <h2 class="signup-lead">
+          <span class="signup-lead-emphasis">Try it free 7 days</span> then $20/mo. thereafter
+        </h2>
+
+      <form action="#" class="signup-form">
+  
+        <div class="signup-form-group">
+          <input type="text" name="firstName" id="first_name" class="signup-form-text_input"placeholder="First Name" autocomplete="given-name">
+          <img src="./images/icon-error.svg" alt="" class="signup-form-error-icon" width="24px">
+          <div class="signup-form-validation_message"></div>
+        </div>
+  
+        <div class="signup-form-group">
+          <input type="text" name="lastName" id="last_name" class="signup-form-text_input" placeholder="Last Name" autocapitalize="family-name">
+          <img src="./images/icon-error.svg" alt="" class="signup-form-error-icon" width="24px">
+          <div class="signup-form-validation_message"></div>
+        </div>
+  
+        <div class="signup-form-group">
+          <input type="text" name="email" id="email" class="signup-form-text_input" placeholder="Email Address">
+          <img src="./images/icon-error.svg" alt="" class="signup-form-error-icon" width="24px">
+          <div class="signup-form-validation_message"></div>
+        </div>
+  
+        <div class="signup-form-group">
+          <input type="password" name="password" id="password" class="signup-form-text_input" placeholder="Password" autocomplete="current-password">
+          <img src="./images/icon-error.svg" alt="" class="signup-form-error-icon" width="24px">
+          <div class="signup-form-validation_message"></div>
+        </div>
+  
+        <input type="submit" value="Claim your free trial" class="signup-form-button" width="24px">
+        <p class="signup-form-terms">By clicking the button, you are agreeing to our <a href="#" class="signup-form-terms-link">Terms and Services</a></p>
+      </form>
+
+    </article>
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://www.linkedin.com/in/manuel-lucero-4a614b165/">Manuel Lucero Perez</a>.
+      </div>
+    </footer>
+
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,290 @@
+
+:root {
+/*=================================== 
+                Colors
+====================================*/
+
+    /*  Primary */
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+
+    /*  Accent  */
+    --Blue: hsl(248, 32%, 49%);
+
+    /*  Neutral */
+    --Dark-Blue: hsl(249, 10%, 26%);
+    --Grayish-Blue: hsl(246, 25%, 77%);
+
+}
+
+/*=================================== 
+                Global
+====================================*/
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url(./images/bg-intro-mobile.png);
+    background-color: var(--Red);
+}
+
+p {
+    font-size: 16px;
+}
+
+.lead, .signup-lead, .signup-form-terms {
+    text-align: center;
+}
+
+
+/*=================================== 
+                Components
+====================================*/
+
+/*--------------------------------
+    1) Site-Wrap 
+ ---------------------------------*/
+
+.site-wrap {
+    padding: 91px 1.5rem;
+    background: url(./images/bg-intro-mobile.png) repeat;
+    background-color: var(--Red);
+}
+
+/*--------------------------------
+    2) Lead 
+ ---------------------------------*/
+
+.lead {
+    max-width: 460px;
+    margin: 0 auto 67px auto;
+    color: white;
+}
+
+.lead-title{
+    margin-top: 0;
+    margin-bottom: 22px;
+
+    font-size: 27px;
+    line-height: 37px;
+}
+
+.lead-message {
+    margin: 0;
+}
+
+/*--------------------------------
+    3) Signup 
+ ---------------------------------*/
+
+.signup {
+    max-width: 460px;
+    margin: 0 auto;
+}
+
+/*----------------------------
+        A. Signup Lead 
+ ----------------------------*/
+
+.signup-lead {
+    margin-bottom: 25px;
+    padding: 18px 42px;
+
+    background-color: var(--Blue);
+    border-radius: 10px;
+    box-shadow: 0px 7px 0px -1px rgba(0,0,0,.1);
+    
+
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+
+.signup-lead-emphasis {
+    font-weight: 800;
+}
+
+/*----------------------------
+        B. Signup Form 
+ ----------------------------*/
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    border-radius: 9px;
+    background-color: white;
+    box-shadow: 0px 7px 0px -1px rgba(0,0,0,.1);
+}
+
+/*----------------------------
+        C. Signup Form Group
+ ----------------------------*/
+.signup-form-group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    max-width: 460px;
+    height: 72px;
+}
+
+.signup-form-text_input {
+    
+    height: 56px;
+
+    padding: 0 17px;
+    border: 1px solid var(--Grayish-Blue);
+    border-radius: 5px;
+
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.signup-form-error-icon {
+    display: none;
+    position: absolute;
+    right: 1rem;
+    top: 16px;
+}
+
+.signup-form-validation_message {
+    display: none;
+
+    font-size: 10px;
+    text-align: right;
+    color: var(--Red);
+}
+
+
+
+.signup-form-button {
+    display: block;
+    margin-bottom: 11px;
+    padding: 17.5px 0;
+    background-color: var(--Green);
+    border: 1px solid var(--Green);
+    border-radius: 5px;
+
+    font-size: 15.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+}
+
+.signup-form-button:active {
+    background-color: hsl(154, 59%, 51%, .8);
+    box-shadow: inset 0px -3px 0px 0px var(--Green);
+}
+
+
+
+.signup-form-terms {
+    margin: 0;
+    padding: 0 17px;
+    font-size: 11px;
+    line-height: 20px;
+}
+
+.signup-form-terms-link {
+    color: var(--Red);
+}
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+@media (min-width: 1440px) {
+
+body {
+    background: url(./images/bg-intro-desktop.png);
+    background-color: var(--Red);
+}
+
+
+/*--------------------------------
+    1) Site-Wrap 
+ ---------------------------------*/
+ .site-wrap {
+    display: flex;
+    padding: 106px 165px 122px 165px;
+}
+
+    
+/*--------------------------------
+    2) Lead 
+ ---------------------------------*/
+
+.lead {
+    max-width: 500px;
+    max-height: 566px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 69px 0 0px;
+
+    text-align: left;
+}
+
+.lead-title{
+    margin: 28px 0;
+    font-size: 49px;
+    text-align: left;
+    line-height: 53px;
+}
+
+.lead-message {
+    margin: 0;
+}
+ 
+/*--------------------------------
+    3) Signup 
+ ---------------------------------*/
+/*----------------------------
+        A. Signup Lead 
+ ----------------------------*/
+
+    .signup {
+        max-width: 540px;
+    }
+/*----------------------------
+        B. Signup Form 
+ ----------------------------*/
+
+    .signup-form {
+        padding: 41px;
+    }
+
+/*----------------------------
+        C. Signup Form Group
+----------------------------*/
+    .signup-form-group {
+        max-width: 460px;
+        height: 76px;
+    }
+
+    .signup-form-text_input {
+        width: 460px;
+        height: 56px;
+    }
+
+    .signup-form-button {
+        width: 460px;
+    }
+
+    .signup-form-validation_message {
+        width: 460px;
+
+        font-size: 13px;
+    }
+}
