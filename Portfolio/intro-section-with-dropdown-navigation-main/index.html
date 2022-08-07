@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script defer src="javascript.js"></script>
+
+</head>
+<body>
+  <!-- <img src="./design/active-states.jpg" alt="" class="temp" > -->
+  
+
+  <header class="site-header">
+    <h2 class="site-logo"><a href="#" class="site-logo-link">snap</a></h2>
+
+    <button class="nav-open-button"><img src="./images/icon-menu.svg" alt="Open Navigation Icon" width="32"></button>
+
+    <nav class="nav">
+
+      <button class="nav-close-button">
+        <img src="./images/icon-close-menu.svg" alt="close navigation Icon" width="26">
+      </button>
+
+      <div class="nav-primary-list">
+
+        <ul class="nav-list">
+
+          <li class="nav-list-item-dropdown">
+
+            <button class="nav-dropdown-button">
+              <span class="nav-dropdown-button-text">Features</span>
+              <svg class="nav-dropdown-icon" width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/></svg>
+            </button>
+
+            <ul class="nav-dropdown-list d1">
+
+              <li class="dropdown-list-item">
+                  <img class="dropdown-list-icon" src="./images/icon-todo.svg" alt="Todo list Icon">
+                  <a class="dropdown-list-link" href="#">Todo List</a>
+              </li>
+
+              <li class="dropdown-list-item">
+                <img class="dropdown-list-icon" src="./images/icon-calendar.svg" alt="Calendar Icon">
+                <a class="dropdown-list-link" href="#">Calendar</a>
+              </li>
+
+              <li class="dropdown-list-item">
+                <img class="dropdown-list-icon" src="./images/icon-reminders.svg" alt="Reminder Icon">
+                <a class="dropdown-list-link" href="#">Reminders</a>
+              </li>
+
+              <li class="dropdown-list-item">
+                <img class="dropdown-list-icon" src="./images/icon-planning.svg" alt="Planning Icon">
+                <a class="dropdown-list-link" href="#">Planning</a>
+              </li>
+            </ul>
+
+          </li>
+          <li class="nav-list-item-dropdown">
+
+            <button class="nav-dropdown-button" alt="Navigation Expand Icon">
+              <span class="nav-dropdown-button-text">Company</span>
+              <svg class="nav-dropdown-icon" width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/></svg>
+            </button>
+
+            <ul class="nav-dropdown-list d2">
+
+              <li class="dropdown-list-item">
+                <a class="dropdown-list-link" href="#">History</a>
+              </li>
+
+              <li class="dropdown-list-item">
+                <a class="dropdown-list-link" href="#">Our Team</a>
+              </li>
+
+              <li class="dropdown-list-item">
+                <a class="dropdown-list-link" href="#">Blog </a>
+              </li>
+
+            </ul>
+
+          </li>
+          <li class="nav-list-item">
+            <a href="#" class="nav-link">Careers</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="#" class="nav-link">About</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav-secondary-list">
+        <ul class="nav-list">
+          <li class="nav-list-item">
+            <a href="#" class="nav-link">Login</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="#" class="nav-link--button">Register</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <article class="lead">
+      
+      <div class="lead-image-container">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./images/image-hero-desktop.png" sizes="500">
+
+          <img class="lead-image" src="./images/image-hero-mobile.png" alt="Colorful shapes around a person holding a laptop" width="375">
+        </picture>
+
+      </div>
+
+      <div class="lead-content-container">
+        <h1 class="lead-title">Make remote work</h1>
+
+        <p class="lead-text">
+          Get your team in sync, no matter your location. Streamline processes, 
+          create team rituals, and watch productivity soar.
+        </p>
+  
+        <a class="lead-link-button" href="#">Learn more</a>
+  
+        <footer class="lead-clients">
+          <img class="lead-client" src="./images/client-databiz.svg" alt="Databiz Logo" width="83">
+          <img class="lead-client" src="./images/client-audiophile.svg" alt="Audiophile Logo" width="52">
+          <img class="lead-client" src="./images/client-meet.svg" alt="Meet Logo" width="69">
+          <img class="lead-client" src="./images/client-maker.svg" alt="Maker Logo" width="60">
+        </footer>   
+      </div>
+
+    </article>  
+  </main>  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
