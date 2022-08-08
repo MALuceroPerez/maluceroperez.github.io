@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="javascript.js"></script>
+
+</head>
+<body>    
+  <main class="container">
+    <header class="pricing">
+
+        <h1 class=" title">Our Pricing</h1>
+    
+        <div class="toggle-wrapper">
+          <label for="annually">Annually</label>
+          <div class="toggle">
+            <input type="radio" name="time_frame" id="annually">
+            <input type="radio" name="time_frame" id="monthly" checked>
+          </div>
+          <label for="monthly">Monthly</label>
+        </div>
+    </header>
+
+    <section class="plans">
+      <article class="plan">
+          <h2 class="name">Basic</h2>
+          <ul class="details">
+            <li class="price">
+              <span class="currency">&dollar;</span>
+              <span id="basic-price">19.99</span>
+            </li>
+            <li class="detail">500 GB Storage</li>
+            <li class="detail">2 Users Allowed</li>
+            <li class="detail">Send up to 3 GB</li>
+          </ul>
+          <a class ="button-link" href="#">Learn More</a>
+      </article>
+        
+      <article class="plan spotlight"> 
+          <h2 class="name spotlight">Professional</h2>
+          <ul class="details">
+            <li class="price spotlight">
+              <span class="currency">&dollar;</span>
+              <span id="Professional-price">24.99</span>
+            </li>
+            <li class="detail spotlight">1 TB Storage</li>
+            <li class="detail spotlight">5 Users Allowed</li>
+            <li class="detail spotlight">Send up to 10 GB</li>
+          </ul>
+          <a class ="button-link spotlight" href="#">Learn More</a>
+      </article>
+        
+      <article class="plan">
+          <h2 class="name">Master</h2>
+          <ul class="details">
+            <li class="price">
+              <span class="currency">&dollar;</span>
+              <span id="master-price">39.99</span>
+            </li>
+            <li class="detail">2 TB Storage</li>
+            <li class="detail">10 Users Allowed</li>
+            <li class="detail">Send up to 20 GB</li>
+          </ul>
+          <a class ="button-link" href="#">Learn More</a>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://www.linkedin.com/in/manuel-lucero-4a614b165/">Manuel Lucero Perez</a>.
+    </div>
+  </footer>
+</body>
+</html>

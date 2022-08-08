@@ -1,0 +1,244 @@
+
+:root {
+    --Linear-Gradient:linear-gradient(to right,hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+    --Very-Light-Grayish-Blue: hsl(240, 78%, 98%);
+    --Light-Grayish-Blue: hsl(234, 14%, 74%);
+    --Grayish-Blue: hsl(233, 13%, 49%);
+    --Dark-Grayish-Blue: hsl(232, 13%, 33%);
+}
+
+html {
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url(./images/bg-top.svg) no-repeat;
+    background-size: contain;
+    background-position: 196px -36px;
+    background-color: var(--Very-Light-Grayish-Blue);
+}
+
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+
+/*============================================
+
+     MAIN SITE WRAPPER - CONTROLS PADDING ON EDGES
+            
+==============================================*/
+
+.container {
+    padding: 42px 25px;
+}
+
+.pricing {
+    margin-bottom: 61px;
+}
+
+.pricing .title {
+    text-align: center;
+    font-size: 32px;
+}
+
+/*============================================
+
+            TOGGLE COMPONENT START
+
+==============================================*/
+.toggle-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 325px;
+    margin: 0 auto;
+    padding: 1.35rem 3rem;
+
+}
+
+.toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    height: 30px;
+    width: 54px;
+
+    padding: 0 4px;
+    border-radius: 1rem;
+    background: var(--Linear-Gradient);
+}
+
+.toggle:hover {
+    opacity: .6;
+}
+
+.toggle-wrapper label {
+    color: var(--Light-Grayish-Blue);
+}
+
+.toggle input {
+    margin: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    width: 23px;
+    height: 23px;
+}
+
+.toggle input:checked {
+    background-color: white;
+}
+
+
+/*============================================
+
+            PLAN COMPONENT START
+
+==============================================*/
+.plans {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.plan {
+    padding: 33px 28px;
+    margin-bottom: 30px;
+    width: 325px;
+    border-radius: 12px;
+    background-color: white;
+    text-align: center;
+    
+}
+
+.plan .details {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.plan .name {
+    margin: 0 0 18px 0;
+    font-size: 19px;
+    color: var(--Grayish-Blue);
+}
+
+.plan .price {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 0 22px 0;
+    border-bottom: 1px solid var(--Light-Grayish-Blue);
+
+    color: var(--Dark-Grayish-Blue);
+    font-size: 73px;
+    letter-spacing: -3px;
+}
+
+.price .currency {
+    font-size: 41px;
+    margin-right: 10px;
+}
+
+.plan .detail {
+    padding: 16.5px 0;
+    border-bottom: 1px solid var(--Light-Grayish-Blue);
+    color: var(--Grayish-Blue);
+}
+.plan .detail:last-child {
+    margin-bottom: 30px;
+}
+
+.button-link {
+    display: block;
+    width: 100%;
+    
+    padding: 13px 8px;
+    background: var(--Linear-Gradient);
+    color: var(--Very-Light-Grayish-Blue);
+    border-radius: 8px;
+    border: 1px solid var(--Very-Light-Grayish-Blue);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.button-link:hover {
+    color: hsl(228, 45%, 44%);
+    background: white;
+    border-color:  hsl(228, 45%, 44%);
+}
+
+/*============================================
+
+            PLAN Spotlight
+
+==============================================*/
+
+.plan.spotlight {
+    background: var(--Linear-Gradient);
+}
+
+.plan .name.spotlight, .plan .price.spotlight, .plan .detail.spotlight {
+    color: white;
+}
+
+.plan .price.spotlight, .plan .detail.spotlight {
+    border-color: white;
+}
+
+.button-link.spotlight {
+    background: white;
+    color: hsl(237, 63%, 64%);
+}
+
+.button-link.spotlight:hover {
+    border-color: white;
+    color: white;
+    background: transparent;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media(min-width: 1440px) {
+    body{
+        background: url(./images/bg-bottom.svg), url(./images/bg-top.svg);
+        background-repeat: no-repeat no-repeat;
+        background-position: bottom left, top right;
+        background-color: var(--Very-Light-Grayish-Blue);
+    }
+    .container {
+        padding: 49px 25px;
+    }
+
+
+    .pricing {
+        margin-bottom: 47px;
+    }
+
+    .plan {
+        margin-top: 22px;
+        width: 350px;
+        height: 455px;
+    }
+
+    .plan.spotlight {
+        margin-top: 0;
+        padding: 55px 28px;
+        height: 500px;
+    }
+}
